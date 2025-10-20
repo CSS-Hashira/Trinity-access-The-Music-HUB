@@ -7,10 +7,10 @@ hamburger.addEventListener('click', () => {
 
 
 const images = [
-  "Images/guitar.png",
-  "Images/drum1.png",
-  "Images/piano.png",
-  "Images/concert1.png",
+  "CSS/Images/guitar.png",
+  "CSS/Images/drum1.png",
+  "CSS/Images/piano.png",
+  "CSS/Images/concert1.png",
 ];
 
 let index = 0;
@@ -51,3 +51,4 @@ setInterval(changeBackground, 4000);
       behavior: 'smooth'
     });
   });
+
