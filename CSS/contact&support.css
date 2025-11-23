@@ -1,0 +1,97 @@
+.event-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+/* Main Container */
+.event-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1100px;
+}
+
+/* Image Section */
+.event-img {
+  flex: 0 0 40%; /* smaller image width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff7f0;
+}
+
+.event-img img {
+  width: 85%;
+  height: auto;
+  border-radius: 20px;
+  margin: 20px;
+  object-fit: cover;
+}
+
+/* Text Section */
+.event-text {
+  flex: 1;
+  padding: 40px 50px;
+  color: #333;
+}
+
+.event-text h2 {
+  color: #ff6b35;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.event-text p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.location-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b35, #ffb347);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+  transition: all 0.3s ease;
+}
+
+.location-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .event-box {
+    flex-direction: column;
+  }
+  .event-img {
+    flex: 1 1 100%;
+    background: none;
+  }
+  .event-img img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+  }
+  .event-text {
+    padding: 30px 25px;
+    text-align: center;
+  }
+  .event-text h2 {
+    font-size: 1.8rem;
+  }
+}

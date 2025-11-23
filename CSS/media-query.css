@@ -1,0 +1,51 @@
+/* Header span p */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+     .card { flex: 0 0 90vw; }
+}
+
+/* Faculty Section */
+  @media (max-width: 768px) {       
+    .team-card {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-section h2 {
+      font-size: 1.7rem;
+    }
+    .team-card {
+      width: 100%;
+    }
+  }
+
+@media (max-width: 992px) {
+  .why-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-trinity {
+    padding: 3rem 1.5rem;
+  }
+
+  .why-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    max-width: 400px;
+  }
+}

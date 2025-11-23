@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-content h1, h1 span {
+  font-family: "Anton", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.hero-content span {
+    color: #f5a623;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        width: 200px;
+        text-align: right;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .demo-btn {
+        margin-top: 10px;
+    }
+}
+
+.bg-container{
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+}
+
+
+/* cards */
+
+.instruments-section {
+  padding: 2rem 1rem;
+  background: black;
+  color: #fff;
+  text-align: center;
+}
+
+.instruments-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cards-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+.cards-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome, Edge, Safari */
+}
+
+.card {
+  flex: 0 0 30vw; /* card width is responsive */
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.card .desc {
+  font-size: 0.90rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+  min-height: 50px; 
+}
+
+.scroll-btn {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+  height: 70px;
+  width: 70px;
+}
+.scroll-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+.scroll-btn.left { left: -10px; }
+.scroll-btn.right { right: -10px; }
+
+.know-more-btn{
+  border: none;
+  border-radius: 5px;
+}
+  .team-section {
+    text-align: center;
+    padding: 70px 20px;
+  }
+
+  .team-section p {
+    color: #f97316;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .team-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .team-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #2c2c2c;
+    width: 270px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ec4a23;
+    margin-bottom: 15px;
+  }
+
+  .team-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .team-role {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 3s;
+  }
+
+ .facebook:hover, .twitter:hover{
+    color: #1877F2;
+  }
+  .instagram:hover {
+    color: #962fbf;
+  }
+  
+  
+    .why-trinity {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 4rem 2rem;
+  min-height: 90vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.why-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+
+.why-text p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.why-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 270px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+
+.feature-box i {
+  font-size: 2.2rem;
+  color: #f97316;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}

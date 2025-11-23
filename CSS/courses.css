@@ -1,0 +1,83 @@
+ .about-hero {
+  background: url('Images/about-hero.jpg') center/cover no-repeat;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 1000px;
+  gap: 30px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #ec4a23;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ec4a23;
+  color: #0a0a0a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0a0a0a;
+  color: #ec4a23;
+  border: 2px solid #ec4a23;
+}
+
+.image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+/* Reverse layout for box 2 */
+.info-box.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 📱 Responsive for phones */
+@media (max-width: 768px) {
+  .info-box,
+  .info-box.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-content img {
+    max-width: 100%;
+  }
+}

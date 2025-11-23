@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Demo — Trinity Access</title>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("tvDRl9PfrEa1gsmyn"); // from EmailJS dashboard
+})();
+
+document.getElementById('demoFormData').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  emailjs.send("service_ulv33e2", "template_8lvlhir", {
+    name: this.querySelector('input[type="text"]').value,
+    email: this.querySelector('input[type="email"]').value,
+    phone: this.querySelector('input[type="tel"]').value,
+    message: this.querySelector('textarea').value
+  })
+  .then(function() {
+    alert("🎶 Thank you! Your demo request has been sent.");
+  }, function(error) {
+    alert("❌ Oops, something went wrong: " + JSON.stringify(error));
+  });
+});
+</script>
+
+<style>
+body {
+  background:#000;
+  color:#fff;
+  font-family:'Inter',sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  margin:0;
+}
+
+/* --- Button --- */
+.book-btn {
+  background:#ff4a00;
+  color:#fff;
+  border:none;
+  padding:14px 32px;
+  font-size:17px;
+  font-weight:600;
+  border-radius:8px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+.book-btn:hover {
+  background:#f5b800;
+  color:#000;
+  transform:scale(1.05);
+}
+
+/* --- Popup --- */
+.popup {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.85);
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.popup-content {
+  background:#0a0a0a;
+  padding:30px 25px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.08);
+  width:90%;
+  max-width:420px;
+  text-align:center;
+  animation:fadeIn 0.4s ease;
+}
+
+.popup-content h2 {
+  color:#ffb84a;
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  background:#1a1a1a;
+  color:#fff;
+  font-size:14px;
+  resize:none;
+}
+
+.popup-content button {
+  width:100%;
+  background:#ff4a00;
+  border:none;
+  padding:10px;
+  border-radius:6px;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.popup-content button:hover {
+  background:#f5b800;
+  color:#000;
+}
+
+#closeForm {
+  float:right;
+  cursor:pointer;
+  color:#ffb84a;
+  font-size:24px;
+  margin-top:-10px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:scale(0.95);}
+  to {opacity:1; transform:scale(1);}
+}
+
+/* --- Preview container styling (optional) --- */
+.preview-section {
+  text-align:center;
+  margin-top:50px;
+}
+.preview-section p {
+  color:#ccc;
+  margin-top:10px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Live Preview Header -->
+<div class="preview-section">
+  <h1 style="color:#ffb84a;">Book a Demo — Live Preview</h1>
+  <p>Click below to test the interactive pop-up demo form.</p>
+  <button class="book-btn" id="openForm">Book a Demo</button>
+</div>
+
+<!-- Popup Form -->
+<div class="popup" id="demoForm">
+  <div class="popup-content">
+    <span id="closeForm">&times;</span>
+    <h2>Book Your Free Demo 🎵</h2>
+    <form id="demoFormData">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Preferred Time & Instrument"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<form action="https://formspree.io/f/yourFormID" method="POST">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+
+<script>
+const openForm = document.getElementById('openForm');
+const closeForm = document.getElementById('closeForm');
+const popup = document.getElementById('demoForm');
+
+openForm.onclick = () => popup.style.display = 'flex';
+closeForm.onclick = () => popup.style.display = 'none';
+window.onclick = e => { if (e.target === popup) popup.style.display = 'none'; };
+
+document.getElementById('demoFormData').onsubmit = e => {
+  e.preventDefault();
+  alert('🎶 Thank you! Your demo request has been received.');
+  popup.style.display = 'none';
+};
+</script>
+
+</body>
+</html>

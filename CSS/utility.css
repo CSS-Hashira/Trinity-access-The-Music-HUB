@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+body{
+    background: black;
+}
+.seperator-line{
+  height: 2px;
+  background: #ec4a23;
+  width: 80vw; 
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+/* Navbar */
+.navbar {
+    height: 16vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+       padding: 1rem 2rem;
+    transition: top 0.4s ease;
+    z-index: 1000;
+}
+.navbar nav a:nth-child(-n + 4):hover {
+   color: #ec4a23;
+}
+.navbar.hidden {
+  top: -120px; /* adjust based on your header height */
+}
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+
+.demo-btn {
+    background: #f5a623;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.demo-btn a{
+    color: black;
+}
+/* Hamburger menu (mobile) */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+.why-text span {
+  color: #f97316;
+}
+    footer {
+  /* background: ; */
+  color: white;
+  padding: 60px 10%;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1.9px solid #ec4a23;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  /* max-width: 200px; */
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
+.footer-about{
+    width: 150px;
+}
+.footer-about p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ec4a23; /* Accent color */
+}
+
+.contact-info i {
+  color: #ec4a23;
+  margin-right: 8px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ec4a23;
+}
+
+.footer-bottom {
+  border-top: 1.9px solid #ec4a23;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #555;
+}

@@ -1,0 +1,302 @@
+/* MAIN SECTION */
+.padding{
+  padding: 70px 100px;
+}
+.about-bridge {
+  padding: 40px 100px;
+  font-family: 'Poppins', sans-serif;
+  background: #000; /* black background */
+  color: #e6e6e6; /* light text to increase readability */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* TEXT */
+.about-text h3 {
+  color: #ff5b21;        /* orange highlight */
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;        /* pure white for main title */
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #d2d2d2;        /* softer readable text */
+}
+
+.highlight {
+  color: #ff5b21;
+  font-weight: 600;
+}
+
+/* IMAGE + LAYER DESIGN */
+.about-image-wrapper {
+  position: relative;
+  width: 45%;
+}
+
+.bg-layer {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  background: #ff5b21;   /* bright orange layer */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
+  border: 3px solid #222;   /* subtle border to lift from bg */
+}
+
+/* Why Trinity Section */
+.why-trinity {
+  background: #000; /* black background */
+  color: #fff;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Text area */
+.why-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.why-text h2 span {
+  color: #ffae00; /* accent color */
+}
+
+.why-text p {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6e6e6;
+}
+
+/* Features Grid */
+.why-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  border-color: #ffae00;
+  box-shadow: 0 0 18px rgba(255, 174, 0, 0.4);
+}
+
+.feature-box i {
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #ffae00;
+}
+
+.feature-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+.mission-vision {
+  background: #000;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mv-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.mv-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.25); /* subtle orange glow */
+  transition: 0.3s ease;
+}
+
+.mv-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(255, 106, 0, 0.45);
+}
+
+.mv-box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.mv-box h2 span {
+  color: #ff6a00; /* orange from logo */
+}
+
+.mv-box p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.founder-section {
+  padding: 40px 100px;
+  background: #000;
+  color: #fff;
+}
+
+.founder-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.founder-image img {
+  width: 100%;
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(255, 106, 0, 0.25);
+}
+
+.founder-text h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.founder-text h2 span {
+  color: #ff6a00;
+}
+
+.founder-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6a00;
+  margin-bottom: 15px;
+}
+
+.founder-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e6e6e6;
+}
+
+.founder-text blockquote {
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #ff6a00;
+  color: #fff;
+}
+ .mini-gallery {
+  padding: 60px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.mini-gallery h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #b30000; /* deep red from your logo */
+  margin-bottom: 10px;
+}
+
+.mini-gallery .subtext {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.view-gallery-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #b30000;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.view-gallery-btn:hover {
+  background: #8b0000;
+}
+
